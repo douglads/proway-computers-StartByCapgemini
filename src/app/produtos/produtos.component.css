@@ -7,7 +7,6 @@
     justify-content: space-evenly;
     align-content: center;  
 }
-
 .product-list__card {
     box-sizing: border-box;
     padding: 10px;
@@ -15,7 +14,11 @@
     flex: 0 1 270px;
     height: 450px;
     background-color: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .product-list__card:hover {
