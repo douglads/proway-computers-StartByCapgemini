@@ -18,7 +18,6 @@ export class DetalheProdutoComponent implements OnInit{
   constructor(
     private produtosService : ProdutosService,
     private route : ActivatedRoute, 
-    private notificacao : NotificacaoService,
     private carrinhoService : CarrinhoService)
     {}
 
@@ -30,7 +29,6 @@ export class DetalheProdutoComponent implements OnInit{
   }
 
   adicionarAoCarrinho(){
-    this.notificacao?.notificar("O produto foi adicionado ao carrinho");
     const produto : IProdutoCarrinho = {
       ...this.produto!,
       quantidade : this.quantidade

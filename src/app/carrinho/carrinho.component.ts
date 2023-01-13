@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { reduce } from 'rxjs';
 import { CarrinhoService } from '../carrinho.service';
 import { IProdutoCarrinho } from '../produtos';
 
