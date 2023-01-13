@@ -25,5 +25,5 @@ export const produtos : IProduto[] = [
     { id: 12, descricao: "Mouse barato", preco: 20, descricaoPreco: "À vista no PIX", quantidadeEstoque : 10, imagem: "/assets/mouse-1.png" },
     { id: 13, descricao: "Mouse ótimo", preco: 200, descricaoPreco: "À vista no PIX", quantidadeEstoque : 10, imagem: "/assets/mouse-2.jpg" },
     { id: 14, descricao: "Mouse pequeno", preco: 50, descricaoPreco: "À vista no PIX", quantidadeEstoque : 10, imagem: "/assets/mouse-4.jpg" },
-    { id: 15, descricao: "Teclado bom", preco: 159.99, descricaoPreco: "À vista no PIX", quantidadeEstoque : 10, imagem: "/assets/teclado-2.jpg" },
+    { id: 15, descricao: "Teclado bom", preco: 159.99, descricaoPreco: "À vista no PIX", quantidadeEstoque : 10, imagem: "/assets/teclado-2.jpg" }
 ]

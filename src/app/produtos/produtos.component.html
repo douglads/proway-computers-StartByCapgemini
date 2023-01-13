@@ -11,7 +11,7 @@
             <p class="product-item__price-description">
                 {{produto.descricaoPreco}}
             </p>
-            <button class="product-item__buy-button" type="button">Comprar</button>
         </a>
+        <button class="product-item__buy-button" type="button" (click)="adicionarAoCarrinho(produto.id)">Adicionar ao carrinho</button>
     </div>
-</section>
+</section>  
