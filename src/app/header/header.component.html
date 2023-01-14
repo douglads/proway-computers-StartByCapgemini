@@ -13,15 +13,12 @@
                         <span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length}}</span>
                     </a>
                 </li>
-                <li><a>Contato</a></li>
+                <li><a routerLink="/contato/">Contato</a></li>
                 <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/douglas-machado-6000b9236/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/douglas-machado-6000b9236/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
-        </nav>    
-        <form class="search-form">
-            <input type="text">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        </nav>   
+        <app-barra-de-pesquisa></app-barra-de-pesquisa>
     </div>
 </header>
