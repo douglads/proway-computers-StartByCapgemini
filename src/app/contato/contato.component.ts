@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contato',
@@ -6,5 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent {
+
+  formContato = this.fb.group({
+    nome : ["", [Validators.minLength(4), Validators.required]],
+    assunto : ["",[Validators.minLength(10), Validators.required]],
+    telefone : ["", [Validators.minLength(11), Validators.required]],
+    email : ["", [Validators.email, Validators.required]],
+    menssagem : ["", [Validators.minLength(20), Validators.required]]
+  });
+
+  constructor(private fb : FormBuilder){}
+  
+  enviarFormulario(){
+    alert("Formulário enviado!")
+    this.formContato.reset()
+  }
 
 }
